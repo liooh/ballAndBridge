@@ -60,12 +60,15 @@ public class GamePannel extends JPanel {
 		createBox();// creates boxes
 	}// my init
 
+	public void setValueVariables(int value) {
+		ball = value;
+		temp = temp1 = temp2 = temp3 = temp4 = temp5 = value;
+		prevb1i = prevb2i = prevb3i = prevb4i = prevb5i = value;
+		prevb1j = prevb2j = prevb3j = prevb4j = prevb5j = value;
+	}
+	
 	public void level1() {
-		ball = 0;
-		temp = temp1 = temp2 = temp3 = temp4 = temp5 = 0;
-		prevb1i = prevb2i = prevb3i = prevb4i = prevb5i = 0;
-		prevb1j = prevb2j = prevb3j = prevb4j = prevb5j = 0;
-
+		setValueVariables(0);
 		levelno = 1;
 		n = 3;
 
@@ -97,11 +100,7 @@ public class GamePannel extends JPanel {
 	}
 
 	public void level2() {
-		ball = 0;
-		temp = temp1 = temp2 = temp3 = temp4 = temp5 = 0;
-		prevb1i = prevb2i = prevb3i = prevb4i = prevb5i = 0;
-		prevb1j = prevb2j = prevb3j = prevb4j = prevb5j = 0;
-
+		setValueVariables(0);
 		levelno = 2;
 		n = 5;
 
